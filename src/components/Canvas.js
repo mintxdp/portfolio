@@ -135,7 +135,7 @@ export default function Canvas() {
 
       return { x, y };
     }
-    let np = 200;
+    let np = 1200;
     function computeArcLengths(points) {
       if (!points || points.length !== 4) return null;
       const samplePoints = np;
@@ -199,7 +199,8 @@ export default function Canvas() {
       ctx.beginPath();
       ctx.arc(x, y, 8, 0, Math.PI * 2);
       ctx.fill();
-      const speed = 9;
+      ctx.imageSmoothingEnabled=true;
+      const speed = 5;
       progress += speed / arcData.totalLength;
       console.log("Progress", progress);
       if (progress <= 1) {
@@ -207,6 +208,7 @@ export default function Canvas() {
       } else {
         progress = 0;
         curveIndex++;
+        a=0;
         // np=np+200;
 
         if (curveIndex < arcLengths.length) {

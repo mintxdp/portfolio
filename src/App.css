@@ -19,11 +19,17 @@
   background-color:black;
   width: 60vh;
   height:60vh;
-  /* border: solid black 1px; */
+  border: solid red 1px;
 
 }
 @media (width <= 1142px) {
   .main_page{
    grid-column: 1/4;
+  }
+}
+@media (width <= 680px){
+  #board{
+    width:100vw;
+    height: 100vw;
   }
 }

@@ -1,0 +1,2 @@
+*{margin:0;padding:0}#root{display:grid;grid-template-columns:20% 60% 20%;grid-template-rows:100vh;height:100vh;overflow:hidden;place-items:center;width:100vw}body{background-color:#000}.main_page{display:grid;grid-column:2/3;grid-template-rows:20vh 60vh 20vh;height:100%;width:100%}.first_page{display:grid;grid-row:1/4;place-items:center;width:100%}#board{background-color:#000;height:40vh;width:40vh}@media (max-width:1142px){.main_page{grid-column:1/4}}@media (max-width:680px){#board{height:300px;width:300px}}
+/*# sourceMappingURL=main.04243177.css.map*/

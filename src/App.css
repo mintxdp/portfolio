@@ -17,8 +17,8 @@
 }
 #board{
   background-color:black;
-  width: 60vh;
-  height:60vh;
+  width: 40vh;
+  height:40vh;
   border: solid red 1px;
 
 }

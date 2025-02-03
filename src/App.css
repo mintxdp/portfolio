@@ -1,0 +1,29 @@
+
+.main_page{
+  /* background-color: rgba(240, 255, 255, 0.582); */
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20vh 60vh 20vh;
+  /* background-color: black; */
+}
+.first_page{
+  /* background-color: rgba(0, 0, 255, 0.308); */
+  display: grid;
+  place-items: center;
+  width: 100%;
+  grid-row:1/4 ;
+}
+#board{
+  background-color:black;
+  width: 60vh;
+  height:60vh;
+  /* border: solid black 1px; */
+
+}
+@media (width <= 1142px) {
+  .main_page{
+   grid-column: 1/4;
+  }
+}

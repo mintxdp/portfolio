@@ -37,7 +37,7 @@ export default function Canvas() {
     ctx.bezierCurveTo(640, 330, 660, 460, 700, 400);
 
     ctx.lineWidth = 10;
-    ctx.stroke();
+    // ctx.stroke();
     // /*
     let t = 0;
     const curvees = [
@@ -176,9 +176,9 @@ export default function Canvas() {
     let curveIndex = 0;
     const arcLengths = curvees.map(computeArcLengths).filter(Boolean);
     let r = 255,
-      g = 255,
-      b = 255,
-      a = 0;
+        g = 255,
+        b = 255,
+        a = 0;
     function Animation() {
       // ctx.beginPath();
       // let prev = getBezierPoint(0);
@@ -197,7 +197,7 @@ export default function Canvas() {
       // ctx.fillStyle = `white`;
 
       ctx.beginPath();
-      ctx.arc(x, y, 8, 0, Math.PI * 2);
+      ctx.arc(x, y, 12, 0, Math.PI * 2);
       ctx.fill();
       ctx.imageSmoothingEnabled=true;
       const speed = 5;
@@ -208,8 +208,8 @@ export default function Canvas() {
       } else {
         progress = 0;
         curveIndex++;
-        a=0;
         // np=np+200;
+        a=0;
 
         if (curveIndex < arcLengths.length) {
           requestAnimationFrame(Animation);
